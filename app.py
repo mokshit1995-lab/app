@@ -43,15 +43,51 @@ b=[10,20,24,5]
 c=bytes(b)
 print(c)
 
-l=[]
+m=(10,20,10,40) #tuple
+l=[10,20,10,50] #List
+n={10,20,30,10,50} #set
+print(type(m))
 print(type(l))
+print(type(n))
 l.append(10)
 l.append(20)
 l.append(40)
 l.append(10)
 l.append('mokshit')
-l.append(None)
+l.append(None) 
 l.remove(10)
-print(l)
+l1=l*3
+print(l1[-1])
+
+r=range(10,30,5)
+for i in r:
+   print (i)
+print(r[0:3])
+print(r[2])
+print(n)
+
+s={10,20,50,20}
+fs=frozenset(s)
+#fs.add(50) not allowed immutable
+#fs[2:3] frozenset is not subscriptable
+#fs[3] not allowed
+print(fs)
+
+#Dictionary
+d={100:'mokshit',200:'gunti',300:'king'}
+print(d)
+d1={}
+d1[100]='sunny'
+d1[200]='bunny'
+d1[300]='dummy'
+print(type(d1))
+print(d1)
+
+for i in d1:
+   print("key={0}, value={1}".format(i,d1[i]))
+
+for i in d1:
+   print("key={key}, value={value}".format(key=i,value=d1[i]))
+
 #import keyword
 #print(keyword.kwlist)
