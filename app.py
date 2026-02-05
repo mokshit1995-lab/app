@@ -86,8 +86,36 @@ print(d1)
 for i in d1:
    print("key={0}, value={1}".format(i,d1[i]))
 
-for i in d1:
-   print("key={key}, value={value}".format(key=i,value=d1[i]))
+for key in d1:
+   print("key={key}, value={value}".format(key=key,value=d1[key]))
+  
+x=5
+a='*'
+b=' '
+#for i in range(1,x+1):
+#   print(b*(x-i) ,a*i)
+
+def f1():
+   print("hello world!!")
+  
+f1()
+
+def f2():
+   a=10
+
+print(f2())
+s='mokshit\ngunti' 
+print(s)
+
+a=10
+b=2
+print("a+b=",a+b)
+print("a-b=",a-b)
+print("a*b=",a*b) 
+print("a/b=",a/b) #return float value
+print("a%b=",a%b) #returns reminder
+print("a//b=",a//b) #if arguments are int then returns int value
+print("a**b=",a**b)
 
 #import keyword
 #print(keyword.kwlist)
