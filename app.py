@@ -107,7 +107,7 @@ print(f2())
 s='mokshit\ngunti' 
 print(s)
 
-a=10
+a=10.93
 b=2
 print("a+b=",a+b)
 print("a-b=",a-b)
@@ -117,5 +117,20 @@ print("a%b=",a%b) #returns reminder
 print("a//b=",a//b) #if arguments are int then returns int value
 print("a**b=",a**b)
 
+print('mokshit'*3)
+
+#a=int(input("Enter a num: "))
+#b=int(input("Enter b num: "))
+#c= a if a<b else b
+#print("Minimum value:",c)
+
+a=int(input("Enter a num: "))
+b=int(input("Enter b num: "))
+c=int(input("Enter c num: "))
+d= a if a>b and a>c else b if b>a and b>c else c if c>a and c>b else 0
+print("Max value:",d)
+
+#print('mokshit'*'3') one of the arg should be int type 
+#print('mokshit'*3.0) cannot multiply with float with string
 #import keyword
 #print(keyword.kwlist)
