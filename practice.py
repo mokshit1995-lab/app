@@ -74,8 +74,9 @@ gf='shamili'
 #print("Hello {n1} your gf {n2} is waiting for salary {n3}".format(n1=name,n2=gf,n3=salary))
 
 number=int(input("Enter a number:"))
+a=number
 for num in range(1,number+1):
-  print(' '*(number-1),'*'*(num))
+  print(' '*(a-2),'*'*(num))
   for num1 in range(2,number+1):
-    print(' '*num,num1*"*")
+    print(' '*(num1-1),num1*" *")
 
