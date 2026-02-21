@@ -136,3 +136,5 @@ print("Max value:",d)
 #import keyword
 #print(keyword.kwlist) """
 
+l=[10,20,50]
+print( 10 in l)
