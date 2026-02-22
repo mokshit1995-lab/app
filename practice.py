@@ -73,10 +73,57 @@ gf='shamili'
 #print("Hello {} your gf {} is waiting for salary {}".format(name,gf,salary))
 #print("Hello {n1} your gf {n2} is waiting for salary {n3}".format(n1=name,n2=gf,n3=salary))
 
-number=int(input("Enter a number:"))
-a=number+1
-for num in range(1,number+1):
-  print(' '*(a-2),'*'*(num))
-  for num1 in range(2,number+1):
-    print(' '*(num1-1),num1*" *")
+#number=int(input("Enter a number:"))
+#a=number+1
+#for num in range(1,number+1):
+#  print(' '*(a-2),'*'*(num))
+#  for num1 in range(2,number+1):
+#    print(' '*(num1-1),num1*" *")
+
+""" x=int(input("Enter a number:"))
+c=2
+for a in range(1,x+1):
+  d=x-c
+  if a == x: d=a-x
+  print((d)*' ',' *'*a)
+  c=c+1 """
+""" 
+brand=input("Enter brand:")
+
+if brand=="KF":
+  print("Its too light")
+elif brand=="KO":
+  print("Its to strong")
+elif brand=="BD":
+  print("Recommended")
+else:
+  print("Other brands not recomended")
+   """
+""" n1=eval(input("Enter 1st number:"))
+n2=eval(input("Enter 2nd number:"))
+n3=eval(input("Enter 3nd number:"))
+if n1>n2 and n1>n3:
+  print("Bigger number is:",n1)
+elif n2>n1 and n2>n3:
+  print("Bigger number is:",n2)
+else:
+  print("Bigger number is:",n3) """
+
+
+""" n=input("Enter string:")
+i=0
+for a in n:
+  if i!=0:
+    print("The character present at {0} index is {1}".format(i,a))
+  i+=1 """
+
+""" for x in range(10,0,-1):
+    print(x) """
+
+""" l=eval(input("Enter some list:"))
+sum=0
+for x in l:
+  sum=sum+x
+print("Sum of list is:",sum)
+ """
 
