@@ -127,3 +127,18 @@ for x in l:
 print("Sum of list is:",sum)
  """
 
+""" n=int(input("Enter a numbder:"))
+sum=0
+i=1
+while i<=n:
+  sum=sum+i
+  i+=1
+print(sum) """
+
+""" name='' 
+psd=''
+while name!='durga' or pwd!='python':
+  name=input("Enter name:")
+  pwd=input("Enter pasword:")
+print("Hi Durga thanks for confirmation")
+ """
