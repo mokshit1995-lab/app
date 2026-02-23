@@ -142,3 +142,21 @@ while name!='durga' or pwd!='python':
   pwd=input("Enter pasword:")
 print("Hi Durga thanks for confirmation")
  """
+
+n=int(input("Enter a num:"))
+""" for i in range(1,n+1): #i is rows
+  for j in range(1,i+1): #j is column
+    print("* ",end='') # to print * in same line
+  print() # will go to next line at end of j execution """
+
+""" n=int(input("Enter a num:"))
+for i in range(1,n+1):
+  for j in range(1,n+1):
+    print("*",end=' ')
+  print() """
+
+for i in range(1,n+1):
+  for j in range(1,i+1):
+    print(' '*(n-i),'* '*i,end='')
+  print()
+
