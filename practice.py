@@ -1,4 +1,4 @@
-import math as m
+import math as mt
 from math import *
 from sys import *
 #print(sqrt(16))
@@ -55,7 +55,7 @@ x = map(myfunc, ('apple', 'banana', 'cherry'))
 #print("Hello",end='...')
 #print(10,30,50,15,sep='-')
 
-l=[1,20,40]
+#l=[1,20,40]
 t=(10,50,20)
 s={10,50,20}
 #print(l)
@@ -155,8 +155,24 @@ for i in range(1,n+1):
     print("*",end=' ')
   print() """
 
-for i in range(1,n+1):
-  for j in range(1,i+1):
-    print(' '*(n-i),'* '*i,end='')
-  print()
+#This is for diamond shape
+""" for i in range(1,n+1):
+  print(" "*(n-i),end='')
+  print("* "*i)
+
+for j in range(n-1,0,-1):
+  print(" "*(n-j),end='')
+  print("* "*j) """
+
+
+""" for i in range(1,n+1):
+ print(" "*(n-i),end="")
+ for j in range(i,i+1):
+  print("*",end=' ')
+  if i>=2:
+   print(" "*(2*i-4),end='')
+   for k in range(i,i+1):
+    print("*",end='')
+ print()
+ """
 
