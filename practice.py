@@ -143,7 +143,7 @@ while name!='durga' or pwd!='python':
 print("Hi Durga thanks for confirmation")
  """
 
-n=int(input("Enter a num:"))
+#n=int(input("Enter a num:"))
 """ for i in range(1,n+1): #i is rows
   for j in range(1,i+1): #j is column
     print("* ",end='') # to print * in same line
@@ -175,4 +175,28 @@ for j in range(n-1,0,-1):
     print("*",end='')
  print()
  """
+""" 
+s=input("enter a string:")
+rev_str=s[::-1]
+print(rev_str)
+
+if rev_str == s:
+  print("ITs a palin")
+else:
+  print("Not Palin")
+
+ """
+
+""" def factorial(n):
+  if n == 0:
+    return 1
+  else :
+    return n * factorial(n-1)
+  
+
+print(factorial(5)) """
+
+
+
+
 
