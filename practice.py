@@ -197,6 +197,19 @@ else:
 print(factorial(5)) """
 
 
+""" def find_largest(n):
+  largest=n[0]
+  for num in n:
+    if num > largest:
+      largest = num
+  return largest
 
+print(find_largest([10,20,40,20,50,60]))
+ """
 
+def find_freq(n):
+  a=dict{}
 
+  for num in n:
+    if num in n:
+      
