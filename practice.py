@@ -31,14 +31,14 @@ from sys import *
 #print(type(c))
 #print(type(argv))
 
-print("length of command line arguements:",len(argv))
+""" print("length of command line arguements:",len(argv))
 print(argv[0])
 
 
 def myfunc(n):
   return len(n)
 
-x = map(myfunc, ('apple', 'banana', 'cherry'))
+x = map(myfunc, ('apple', 'banana', 'cherry')) """
 
 #l=[10,20,50]
 #print(510 not in l)
@@ -207,9 +207,107 @@ print(factorial(5)) """
 print(find_largest([10,20,40,20,50,60]))
  """
 
-def find_freq(n):
-  a=dict{}
+newlist=[ x for x in range(10) if x % 2 == 0]
+print(newlist)
+""" 
+newlist1=[]
 
-  for num in n:
-    if num in n:
-      
+for i in range(len(newlist)):
+    if i == 0:
+        a=newlist[i]
+    elif i == len(newlist) -1 :
+        b=newlist[i]
+
+newlist[-1]=a
+newlist[0]=b
+print(newlist) """
+
+
+newlist[0],newlist[-1] = newlist[-1],newlist[0]
+print(newlist)
+
+sum=0
+p=1
+for i in newlist:
+    sum = sum + i
+    p = p * i
+
+print(f"sum is {sum}")
+print(f"product is {p}")
+print(f"avg is {sum/2}")
+
+
+l1=[1,2,3,5,6,5,5,3,1,3,5,6]
+l2=[]
+for i in l1:
+    if i not in l2:
+        l2.append(i)
+
+print(l2)
+
+l1=[10,2,25,255,21,2051,521]
+largest=l1[0]
+sec_larg=0
+
+for i in range(len(l1)):
+    if l1[i] > largest:
+        largest=l1[i]
+print(largest)
+
+
+l1=[10,2,25,255,21,2051,521]
+l1.sort()
+print(l1[-2])
+
+
+l1=[10,2,25,255,21,2051,521,135,356,1010,199,200]
+largest = sec_larg = float('-inf')
+
+for num in l1:
+    if num > largest:
+        largest=num
+    elif num > sec_larg and num != largest:
+        sec_larg = num
+print(sec_larg) 
+
+
+l1=['p', 'y', 't', 'h', 'o', 'n']
+s=''
+for i in l1:
+   s = s + i 
+
+print(s)
+
+l1=[0,1,500,205,210,505,201,603,954]
+even=[]
+odd=[]
+
+for i in l1:
+    if i % 2 == 0:
+        even.append(i)
+    else :
+        odd.append(i)
+print(even)
+print(odd)
+
+l1=[ x**2 if x % 2 == 0 else x**3 for x in range(1,21) ]
+print(l1)
+
+l1=[[1,2],[3,4]]
+l2=[]
+for x in l1:
+    for y in x:
+        l2.append(y)
+
+print(l2)
+
+l1=[5,10,15,20,25,50,20]
+c=0
+for i in range(len(l1)):
+    if l1[i] == 20:
+        l1.insert(i,200)
+        c=c+1
+    if c == 1:
+      break
+    
+print(l1)
