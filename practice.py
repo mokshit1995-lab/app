@@ -311,3 +311,22 @@ for i in range(len(l1)):
       break
     
 print(l1)
+
+l1[l1.index(20)]=200
+print(l1)
+
+l1=[10,2,25,255,21,2051,521,135,356,1010,199,200]
+largest = float('-inf')
+smallest = l1[0]
+for i in l1:
+    if i > largest:
+        largest=i
+
+for i in l1:
+    if i < smallest:
+        smallest=i
+
+print(largest)
+print(smallest)
+print(f'Range of min and max is {smallest} - {largest}')
+
