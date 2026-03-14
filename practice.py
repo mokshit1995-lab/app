@@ -330,3 +330,34 @@ print(largest)
 print(smallest)
 print(f'Range of min and max is {smallest} - {largest}')
 
+my_list = [100, 4, 200, 1, 3, 2,9,11,12,10,15,13,16,14]
+my_list.sort()
+print(my_list)
+start=0
+count=0
+l2=[]
+for i in my_list:
+    if i > start:
+      if i == start+1:
+          count +=1
+          start=i
+      else :
+          l2.append(count)
+          count = 1
+          start = i
+
+print(max(l2))
+
+
+l=[1,3,4,5,1,2,5,2]
+newl=[]
+
+for i in l:
+    if i not in newl:
+        newl.append(i)
+
+
+print(newl)
+new1=list(l)
+print(f'Copied list is:{new1}')
+
