@@ -361,3 +361,12 @@ print(newl)
 new1=list(l)
 print(f'Copied list is:{new1}')
 
+def com(a,b):
+    for i in a:
+        for j in b:
+            if i == j:
+                print(True)
+                break
+            
+com([1,2,4,5],[2,7,8,10])
+
