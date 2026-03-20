@@ -399,3 +399,20 @@ print(test([5,7,11,17,624]))
 """ l1=['Red','Green','Black','White','Pink','Yellow']
 l1.pop(0)
 print(l1) """
+
+import itertools
+
+print(list(itertools.permutations([1,2,3])))
+
+l1=[1,3,5,7,9]
+l2=[1,2,4,6,7,8]
+
+diff_l1_l2 = list(set(l1) - set(l2))
+diff_l2_l1 = list(set(l2) - set(l1))
+
+tot_diff= diff_l1_l2 + diff_l2_l1
+print(diff_l1_l2)
+print(diff_l2_l1)
+print(tot_diff)
+
+
