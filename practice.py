@@ -370,3 +370,32 @@ def com(a,b):
             
 com([1,2,4,5],[2,7,8,10])
 
+from random import shuffle
+shuffle(l)
+print(l)
+
+import math
+
+def prime(a):
+      b=0
+      if a <= 1:
+        return False
+      if a == 2:
+        return True
+      else:   
+        b=int(math.sqrt(a))
+        for n in range(3, b+1,2):
+            if a % n == 0:
+                return False
+        return True
+            
+def test(nums):
+    result = [prime(i) for i in nums]
+    return all(result)
+
+print(test([5,7,11,17,624]))
+
+
+""" l1=['Red','Green','Black','White','Pink','Yellow']
+l1.pop(0)
+print(l1) """
