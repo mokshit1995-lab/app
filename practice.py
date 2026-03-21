@@ -415,4 +415,32 @@ print(diff_l1_l2)
 print(diff_l2_l1)
 print(tot_diff)
 
+l1=['asfsf','dgdg','agdgd']
+st1=''.join(l1)
+print(st1) 
 
+import itertools
+l1=[[2,4,5,],[2,5,6,],[9],[0,5,2]]
+l2=list(itertools.chain(*l1))
+print(l2)
+
+l1=[1,4,5,6]
+l2=[6,6,7,1]
+
+l3=list(l1+l2)
+print(l3)
+
+
+
+def sec_small(l1):
+  smallest= sec_small= float('inf')
+  for i in l1:
+      if i < smallest:
+        sec_small=smallest
+        smallest = i
+      elif i < sec_small and i != smallest:
+          sec_small = i 
+  return sec_small
+
+l1=[1,4,5,6]
+print(sec_small(l1))
