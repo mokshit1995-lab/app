@@ -444,3 +444,34 @@ def sec_small(l1):
 
 l1=[1,4,5,6]
 print(sec_small(l1))
+
+l1=[10,50,20,10,50,20,50,60,90]
+l2=set(l1)
+l3=list(l2)
+print(l3)
+
+import collections
+l1=[10,50,20,10,50,20,50,60,90]
+ctr = collections.Counter(l1)
+print(ctr)
+
+l1=[10,50,20,10,50,20,50,60,90]
+d=dict()
+count=0
+
+for i in l1:
+    count=0
+    for j in l1:
+        if i == j:
+            count+=1
+            d[i] = count
+print(d)
+
+l1=[10,50,20,50,60,10,50,30,52,24,30,64]
+count=0
+for i in l1:
+    if 30 <= i <= 60:
+        count+=1
+print(count)
+
+
