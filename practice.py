@@ -474,4 +474,22 @@ for i in l1:
         count+=1
 print(count)
 
+l1=['X','Y']
+n=5
+l2=[]
+a=''
+for i in range(1,n+1):
+    for j in l1:
+        k = str(i)
+        a = j + k
+        l2.append(a)
 
+print(l2)  
+
+
+a= 'string'
+print(id(a))
+
+
+
+    
