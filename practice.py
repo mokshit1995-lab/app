@@ -491,5 +491,75 @@ a= 'string'
 print(id(a))
 
 
+l1=[1,3,5,7,9]
+l2=[1,2,4,6,7,8]
+l3=[1,2,125,122,657,124]
+common = list((set(l1) & set(l2) & set(l3)))
+print(common)
 
-    
+l1=[0,1,2,3,4,5]
+l2=[]
+
+for i in range(1,(len(l1)+1),2):
+    l2.append(l1[i])
+    l2.append(l1[i-1])
+
+print(l2)
+
+l1=[0,1,2,3,4,5]
+
+a= int("".join(map(str,l1)))
+
+print(a)
+
+l1 = [1,2,4,5]
+a,b,c,d=l1
+print(a)
+
+print(l1[::-1])
+
+
+l1 = [1,2,4,5]
+l2=[10,20,40]
+l1[:0]=l2
+print(l1)
+
+#Set
+s1={'apple','banana',True,1,False,0}
+print(s1)
+
+for x in s1:
+    print(x)
+
+print('banana' in s1)
+
+s1.add('orange')
+print(s1)
+
+s2={'pineapple','mango','papaya'}
+
+s2.update(s1)
+
+print(s2)
+
+l2=['kiwi','watermelon']
+
+s2.update(l2)
+print(s2)
+
+s2.remove('kiwi')
+print(s2)
+
+#Remove will raise error if item is not present in set
+
+s2.discard('car')
+print(s2)
+
+#Discard will not raise error if item is not present in set.
+
+#s2.clear()
+print(s2)
+
+#Clear will clear the set and return empty set
+
+del s2
