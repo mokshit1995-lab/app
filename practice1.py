@@ -70,3 +70,13 @@ print(d)
 
 del d
 
+d1=dict(name="mokshit",phone=1100,address='Jubliee')
+print(d1)
+
+d2={ 'name': "Mokshit", 'class': 'Upper', 'bike':'R1'}
+print(d2)
+
+d2['class']='Higher'
+d2.update({'car':"Creta"})
+d2['House']='Jubliee'
+print(d2)
