@@ -80,3 +80,16 @@ d2['class']='Higher'
 d2.update({'car':"Creta"})
 d2['House']='Jubliee'
 print(d2)
+
+for x in d2:
+    print(f'keys -> {x} : Values -> {d2[x]}')
+
+for x in d2.values():
+    print(x)
+
+for x in d2.keys():
+    print(x)
+
+for x,y in d2.items():
+    print(x,y)
+
