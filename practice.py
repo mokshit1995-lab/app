@@ -563,3 +563,36 @@ print(s2)
 #Clear will clear the set and return empty set
 
 del s2
+
+s1={1,2,3,4,5}
+s2={6,7,8,9,10}
+s3={'a','b','c'}
+s4=s1.union(s2,s3)
+s4 = s2 | s1 | s3
+print(s4)
+
+s1.update(s3)
+print(s1)
+
+
+s1={1,2,3,6,7}
+s2={6,7,8,9,10}
+s4={6,7,8}
+s3=s1.intersection(s2,s4)
+s3= s1 & s2 & s4
+print(s3)
+
+s1.intersection_update(s2)
+print(s1)
+
+s1={1,2,3,6,7}
+s2={6,7,8,9,10}
+s4={6,7,8}
+s3=s1.difference(s2)
+s3=s1.symmetric_difference(s2)
+s3 = s1 ^ s2
+print(s3)
+
+s1=frozenset({'a','b','c'})
+print(s1)
+print(type(s1))
